@@ -30,7 +30,7 @@ jobs:
     steps:
       - run: ./scripts/test.sh
   deploy:
-    needs: [compile-assets, cypress-testing]
+    needs: [compile-assets, unit-test]
     runs-on: ubuntu-latest
     steps:
       - run: ./scripts/deploy.sh
