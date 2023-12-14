@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ ! startsWith(github.ref, 'refs/heads/conditional/') }}
     steps:
-      - run: echo "I am running conditionaly"
+      - run: echo "I am running conditionaly!"
   visual-regresion:
     needs: compile-assets
     runs-on: ubuntu-latest
