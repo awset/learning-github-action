@@ -23,6 +23,8 @@ jobs:
     needs: compile-assets
     runs-on: ubuntu-latest
     steps:
+      - run: pwd
+      - run: ls -la
       - run: ./../scripts/visual-regression.sh
   unit-test:
     needs: compile-assets
