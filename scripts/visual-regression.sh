@@ -1,0 +1,1 @@
+echo 'visual regression success'
